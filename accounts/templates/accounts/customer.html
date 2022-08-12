@@ -66,8 +66,8 @@
 					<td>{{ i.Product.category }}</td>
 					<td>{{ i.date_created }}</td>
 					<td>{{ i.status }}</td>
-					<td><a href=''>Update</a></td>
-					<td><a href=''>Remove</a></td>
+					<td><a href='{% url 'updateorder' i.id  %}'>Update</a></td>
+					<td><a href='{% url 'delete' i.id %}'>Delete</a></td>
 					</tr>
 					{% endfor %}
 				</tr>
